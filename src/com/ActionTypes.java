@@ -2,7 +2,7 @@ package com;
 
 public enum ActionTypes {
     Face2Face,
-    PhoneCall,
+    PhoneCall, 
     TextMessaging,
     Unknown
 }
