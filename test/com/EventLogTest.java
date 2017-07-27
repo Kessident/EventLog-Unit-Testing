@@ -13,7 +13,9 @@ public class EventLogTest {
 
     @Test
     public void addEvent() throws Exception {
-        assertTrue(eLog.addEvent(new Event("Event Name", "Face2Face")));
+        boolean addedProperly = eLog.addEvent(new Event("Event Name", "Face2Face"));
+        assertTrue(addedProperly);
+        assertEquals("size of log should be 1", 1, eLog.getNumEvents());
     }
 
     @Test
